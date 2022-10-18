@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Elke's Market Cafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <script>
+        function menu() {
+            var buttons = document.getElementById("nav-buttons");
+            var discover = document.getElementById("discover");
+            if (getComputedStyle(buttons).right <= "1100px") {
+                buttons.style.right = "0px";
+                document.body.style.position = "fixed";
+                discover.style.zIndex = "-1";
+                buttons.style.zIndex = "100";
+            } 
+            if ((getComputedStyle(buttons).right === "0px")) {
+                buttons.style.right = "-100%";
+                document.body.style.position = "";
+            }
+        }
+    </script>
+    <body>
+        <div class="page">
+            <div class="content">
+                <nav class="navigation">
+                    <img class="menu" src="./hamburger-bar.png" alt="hamburger menu icon" onclick="menu()">
+                    <img class="logo" src='./logo-recolored.png' alt="elke's logo"/>
+                    <ul id="nav-buttons" class="nav-buttons">
+                        <li><a>CAFE</a></li>
+                        <li><a>MARKET</a></li>
+                        <li><a>CATERING</a></li>
+                        <li><a>EVENTS</a></li>
+                        <li><a>FEEDBACK</a></li>
+                        <li><a>ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <hr>
+    
+            <div class="introduction">
+                <div class="definition">
+                    <div class="volume"><img src = "./green-volume.png" alt="green volume icon"/></div>
+                    <p class="name">Elke's <br> <span>/Elka's/</span></p>
+                    <p class="def"><span class="type">noun</span> <br> <span>a dining 
+                        experience like no other. Elke's Market Cafe is a unique location
+                        that satisfies all your culinary cravings. We're far more than 
+                        your average cafe — bringing our customers freshly made dishes
+                        in our market and offering catering options for all your special
+                        occassions. When you visit, you will be amazed by our friendly,
+                        engaging atmosphere, and pleased with the freshness and 
+                        made-to-order quality of every dish.
+                    </span> </p>
+                </div>
+            </div>
+    
+            <div class="browse">
+                <div class="explore-section">
+                    <p class="explore"><span class="explore-header">LET'S 
+                        EXPLORE</span> <br> <br> <span class="explore-body">Elke's Market Cafe provides more than 
+                            just food, we provide a dining experience unlike any other. 
+                            Using only the freshest ingredients for our menu items, 
+                            every meal with us is truly exceptional. Our cafe offers 
+                            homestyle breakfast, savory lunch varieties like classic 
+                            sandwiches and homemade soups. Looking for the perfect way 
+                            to impress guests for your next dinner? Stop by our market 
+                            and choose from our breads, casseroles, side dishes and more!
+                    </span> </p>
+                </div>
+            </div>
+    
+            <div class="discover-container" id="discover">
+                <div class="discover">
+                    <div class="categories">
+                        <div class="category-container">
+                            <img class="cafe-img" src = "./cafe.jpeg" alt="sandwich at the cafe"/>
+                            <div class="centered" id="cafe-centered">CAFE</div>
+                        </div>
+                        <div class="category-container">
+                            <img class="market-img" src = "./market.jpeg" alt="chip dips at the market"/>
+                            <div class="centered" id="market-centered">MARKET</div>
+                        </div>
+                        <div class="category-container">
+                            <img class="catering-img" id="catering-centered" src = "./catering.jpeg" alt="catered food"/>
+                            <div class="centered" id="catering-centered">CATERING</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr>
+    
+            <footer>
+                <div class="footer">
+                    <div class="cafe-info">
+                        <p class="address">ELKE'S MARKET CAFE<br> <span>105 N Greenville Ave Suite 
+                            11</span> <br> <span>Allen, TX 75002</span></p>
+                        <div class="connect">
+                            <p>LET'S CONNECT</p>
+                            <div class="connect-container">
+                                <img src="facebook.svg" alt="facebook icon">
+                            </div>
+                            <div class="connect-container">
+                                <img src="instagram.svg" alt="instgram icon">
+                            </div>
+                            <div class="connect-container">
+                                <img src="phone.svg" alt="phone icon">
+                            </div>
+                        </div>
+                    <p>© 2020-2022 Elke's Market Cafe</p>
+                    </div>
+                </div>
+              </footer>
+        </div>
+    </body>
+</html>
